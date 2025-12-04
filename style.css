@@ -1,0 +1,146 @@
+/* General & Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #72a9f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fad599; /* Light Gold/Yellowish background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #e70000; /* Wendy's Red */
+    font-size: 2em;
+    margin-bottom: 20px;
+    
+    /* ENHANCED H1 CONTRAST */
+    background-color: #eff0e2;
+    padding: 18px 15px; 
+    border: 7px solid #333; /* Strong dark border for max contrast */
+    outline: 3px solid #e70000; /* Red outline for brand color */
+    outline-offset: -5px; /* Outline inside the border */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker, deeper shadow for a lift effect */
+    animation: pulse 1.5s infinite; 
+}
+
+/* Animation Keyframes */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.steps h2 {
+    color: #e70000;
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.steps ol {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.steps li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 5px solid #e70000;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.urgency-timer {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    /* ENHANCED TIMER BLOCK CONTRAST */
+    background-color: #ffffff; /* White background to separate it from container */
+    padding: 15px;
+    border: 3px dashed #e70000; /* Dashed red border for urgency */
+    border-radius: 5px;
+}
+
+#countdown {
+    /* ENHANCED TIMER DIGITS CONTRAST */
+    color: #ffffff; /* White text */
+    background-color: #333; /* Dark background for max contrast */
+    padding: 8px 15px; 
+    border-radius: 6px;
+    font-size: 1.5em; 
+    font-weight: 900; 
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.cta-button {
+    background-color: #e70000; /* Wendy's Red */
+    color: #f6fcd9;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #c40000; /* Darker red on hover */
+}
+
+.social-proof h2 {
+    color: #e70000;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.comment {
+    background-color: #f3f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #8ceafb;
+    text-align: left;
+    font-style: italic;
+    color: #555;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 1em;
+}
