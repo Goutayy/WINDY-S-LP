@@ -12,7 +12,16 @@
         
         <img src="https://image2url.com/images/1764789140242-7134393d-8365-4107-8657-158fdf2bcf31.jpg" alt="Free Wendy's Gift Card" class="responsive-image">
         
-        <p>Due to a recent limited-time promotion, *verified US residents using an Android device* are currently eligible to receive a $100 Wendy's Gift Card. This exclusive offer is closing soon. Don't miss this opportunity to enjoy your favorite Wendy's meals for free!</p>
+        <p>Due to a recent limited-time promotion, verified US residents using an Android device are currently eligible to receive a $100 Wendy's Gift Card. This exclusive offer is closing soon. Don't miss this opportunity to enjoy your favorite Wendy's meals for free!</p>
+        
+        <div class="simple-process">
+            <h2>How This Offer Works:</h2>
+            <ol>
+                <li>Click 'CLAIM HERE' below</li>
+                <li>Complete a Short Survey (to unlock your card)</li>
+                <li>Receive Your Digital Coupon Instantly!</li>
+            </ol>
+        </div>
         
         <div class="steps">
             <h2>How to Claim Your Card (Android Required):</h2>
@@ -28,7 +37,7 @@
             <span id="countdown" class="timer-display-inline"></span>
         </p>
         
-        <a href="javascript:void(0)" onclick="call_locker();" class="cta-button">✅ CLICK HERE TO CLAIM YOUR $100 CARD NOW</a>
+        <a href="#" onclick="call_locker(); return false;" class="cta-button">✅ CLICK HERE TO CLAIM YOUR $100 CARD NOW</a>
         
         <div class="social-proof">
             <h2>What Others are Saying:</h2>
@@ -43,11 +52,11 @@
             </div>
         </div>
         
-        <a href="javascript:void(0)" onclick="call_locker();" class="cta-button bottom-cta">✅ COMPLETE YOUR CLAIM NOW</a>
+        <a href="#" onclick="call_locker(); return false;" class="cta-button bottom-cta">✅ COMPLETE YOUR CLAIM NOW</a>
     </div>
     
     <script>
-        // كود المؤقت الخاص بك
+        
         const endTime = new Date();
         endTime.setDate(endTime.getDate() + 7); 
         const countdownDisplay = document.getElementById('countdown');
