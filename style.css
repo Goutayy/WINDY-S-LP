@@ -145,26 +145,40 @@ p {
     font-size: 1em;
 }
 
-/* --- Trust Badges Styling --- */
-.trust-badges {
+/* ------------------------------------- */
+/* --- FINAL TRUST BADGES SPLIT STYLES --- */
+/* ------------------------------------- */
+
+.trust-container {
     text-align: center;
-    margin: 15px 0;
-    font-size: 0.95em;
-    color: #008000; /* Green for trust and safety */
+    margin: 20px auto 10px auto; /* Centered with space above CTA */
+    padding-bottom: 5px;
 }
 
-.trust-badges p {
-    display: inline-block;
-    padding: 3px 8px;
+/* Base style for all badges (Green, Secure Look) */
+.top-security-badge, .split-badge {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #008000;
+    padding: 6px 12px;
     border: 1px solid #c8e6c9;
     background-color: #f0fdf0;
     border-radius: 4px;
     margin: 3px 5px;
-    font-weight: bold;
-    color: #008000;
 }
 
-.bottom-badges {
-    margin-top: 10px;
-    margin-bottom: 30px;
+/* 1. Top Badge (Longest one - Full Width) */
+.top-security-badge {
+    display: block; /* تجعلها تأخذ سطرًا كاملاً */
+    width: fit-content; /* يجعل العرض بحجم المحتوى */
+    margin: 0 auto 10px auto; /* توسيط العنصر وإضافة مسافة أسفله */
+    font-size: 1em; /* جعلها أكبر قليلاً للتركيز */
+}
+
+/* 2. Bottom Badges (Split Left/Right) */
+.split-badges-row {
+    display: flex; /* تفعيل Flexbox */
+    justify-content: center; /* توسيط الصف الذي يحتوي الشارتين */
+    gap: 10px; /* مسافة بين الشارتين */
+    flex-wrap: wrap; /* تسمح بكسر العناصر في الشاشات الصغيرة جداً */
 }
