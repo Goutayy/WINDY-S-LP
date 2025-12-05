@@ -144,3 +144,27 @@ p {
     margin: 0;
     font-size: 1em;
 }
+
+/* --- Trust Badges Styling --- */
+.trust-badges {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 0.95em;
+    color: #008000; /* Green for trust and safety */
+}
+
+.trust-badges p {
+    display: inline-block;
+    padding: 3px 8px;
+    border: 1px solid #c8e6c9;
+    background-color: #f0fdf0;
+    border-radius: 4px;
+    margin: 3px 5px;
+    font-weight: bold;
+    color: #008000;
+}
+
+.bottom-badges {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
