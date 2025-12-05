@@ -36,7 +36,7 @@ h1 {
     animation: pulse 1.5s infinite; 
 }
 
-/* Animation Keyframes */
+/* Animation Keyframes for H1 */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.02); }
@@ -105,7 +105,8 @@ p {
 }
 
 .cta-button {
-    background-color: #e70000; /* Wendy's Red */
+    /* Base CTA Styling (Red Button) */
+    background-color: #e70000; 
     color: #f6fcd9;
     padding: 15px 30px;
     border: none;
@@ -115,11 +116,66 @@ p {
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
-    display: inline-block;
+    display: block; /* To make it full width */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
 }
 
 .cta-button:hover {
     background-color: #c40000; /* Darker red on hover */
+}
+
+/* --- Pulse Animation for CTA Buttons --- */
+.pulse-cta {
+    /* Apply the animation to the button */
+    animation: cta-pulse 1.5s infinite;
+}
+
+@keyframes cta-pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(231, 0, 0, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(231, 0, 0, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(231, 0, 0, 0); }
+}
+
+.bottom-cta {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* --- Split/Hierarchical Trust Badges --- */
+.trust-container {
+    text-align: center;
+    margin: 20px auto 10px auto; 
+    padding-bottom: 5px;
+}
+
+/* Base style for all badges (Green, Secure Look) */
+.top-security-badge, .split-badge {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #008000;
+    padding: 6px 12px;
+    border: 1px solid #c8e6c9;
+    background-color: #f0fdf0;
+    border-radius: 4px;
+    margin: 3px 5px;
+}
+
+/* 1. Top Badge (Longest one - Full Width) */
+.top-security-badge {
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto 10px auto; 
+    font-size: 1em; 
+}
+
+/* 2. Bottom Badges (Split Left/Right) */
+.split-badges-row {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
 }
 
 .social-proof h2 {
@@ -143,42 +199,4 @@ p {
 .comment p {
     margin: 0;
     font-size: 1em;
-}
-
-/* ------------------------------------- */
-/* --- FINAL TRUST BADGES SPLIT STYLES --- */
-/* ------------------------------------- */
-
-.trust-container {
-    text-align: center;
-    margin: 20px auto 10px auto; /* Centered with space above CTA */
-    padding-bottom: 5px;
-}
-
-/* Base style for all badges (Green, Secure Look) */
-.top-security-badge, .split-badge {
-    font-size: 0.9em;
-    font-weight: bold;
-    color: #008000;
-    padding: 6px 12px;
-    border: 1px solid #c8e6c9;
-    background-color: #f0fdf0;
-    border-radius: 4px;
-    margin: 3px 5px;
-}
-
-/* 1. Top Badge (Longest one - Full Width) */
-.top-security-badge {
-    display: block; /* تجعلها تأخذ سطرًا كاملاً */
-    width: fit-content; /* يجعل العرض بحجم المحتوى */
-    margin: 0 auto 10px auto; /* توسيط العنصر وإضافة مسافة أسفله */
-    font-size: 1em; /* جعلها أكبر قليلاً للتركيز */
-}
-
-/* 2. Bottom Badges (Split Left/Right) */
-.split-badges-row {
-    display: flex; /* تفعيل Flexbox */
-    justify-content: center; /* توسيط الصف الذي يحتوي الشارتين */
-    gap: 10px; /* مسافة بين الشارتين */
-    flex-wrap: wrap; /* تسمح بكسر العناصر في الشاشات الصغيرة جداً */
 }
