@@ -14,10 +14,6 @@
         
         <p>Due to a recent limited-time promotion, verified US residents using an Android device are currently eligible to receive a $100 Wendy's Gift Card. This exclusive offer is closing soon. Don't miss this opportunity to enjoy your favorite Wendy's meals for free!</p>
         
-        <div class="trust-badges top-badges">
-            <p>🔒 Site Secured | No Credit Card Required</p>
-        </div>
-
         <div class="steps">
             <h2>How to Claim Your Card (Android Required):</h2>
             <ol>
@@ -31,14 +27,15 @@
             ⚠ Warning: Only a Limited Number of Cards are Left Today! 
             <span id="countdown" class="timer-display-inline"></span>
         </p>
-        
-        <a href="#" onclick="call_locker(); return false;" class="cta-button">✅ CLICK HERE TO CLAIM YOUR $100 CARD NOW</a>
-        
-        <div class="trust-badges bottom-badges">
+
+        <div class="trust-badges top-cta-badges">
+            <p>🔒 Site Secured | No Credit Card Required</p>
             <p>✅ 100% Secure Process</p>
             <p>📧 Email Delivery Guaranteed</p>
         </div>
-
+        
+        <a href="#" onclick="call_locker(); return false;" class="cta-button">✅ CLICK HERE TO CLAIM YOUR $100 CARD NOW</a>
+        
         <div class="social-proof">
             <h2>What Others are Saying:</h2>
             <div class="comment">
@@ -54,7 +51,8 @@
         
         <a href="#" onclick="call_locker(); return false;" class="cta-button bottom-cta">✅ COMPLETE YOUR CLAIM NOW</a>
     </div>
-    <script>)
+    
+    <script>
         const endTime = new Date();
         endTime.setDate(endTime.getDate() + 7); 
         const countdownDisplay = document.getElementById('countdown');
