@@ -178,6 +178,8 @@ p {
     flex-wrap: wrap; 
 }
 
+/* --- Social Proof & Comments STYLES --- */
+
 .social-proof h2 {
     color: #e70000;
     font-size: 1.5em;
@@ -192,11 +194,47 @@ p {
     border-radius: 5px;
     border: 1px solid #8ceafb;
     text-align: left;
-    font-style: italic;
     color: #555;
 }
 
-.comment p {
+/* Style the container for the image and name */
+.comment-header {
+    display: flex; /* Activate Flexbox */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 5px; 
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ddd; /* Separator line */
+}
+
+/* Style the Profile Image (Avatar) */
+.comment-avatar {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 10px; /* Spacing between image and name (RTL adjust) */
+    object-fit: cover; /* Ensures image fills the circle */
+}
+
+/* Style the Name (Make it stand out) */
+.comment-name {
+    font-weight: 900; /* Extra bold */
+    color: #333;
     margin: 0;
-    font-size: 1em;
+}
+
+/* ❗❗ NEW STYLE: Gold Color for Stars ❗❗ */
+.stars {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: gold; /* Changed from #ffd700 to 'gold' for better readability */
+    text-align: left;
+}
+
+/* Adjust the main comment paragraph */
+.comment p:not(.comment-name) {
+    margin-top: 10px; 
+    font-size: 1.05em; 
+    font-style: italic;
+    color: #555;
 }
